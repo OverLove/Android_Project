@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTheme"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:text="@string/textLoginTitle"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_Title"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/Login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvLogin"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/textEmail"
+            android:inputType="textEmailAddress"
+            android:lines="1" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etEmail"
+            android:ems="10"
+            android:hint="@string/textPassword"
+            android:inputType="textPassword"
+            android:lines="1" />
+
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etPassword"
+            android:onClick="onLoginClick"
+            android:text="@string/textLogin" />
+
+        <Button
+            android:id="@+id/btRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btLogin"
+            android:onClick="onRegisterClick"
+            android:text="@string/textRegister" />
+
+        <Button
+            android:id="@+id/btForgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/btLogin"
+            android:layout_below="@+id/btLogin"
+            android:onClick="onForgetPasswordClick"
+            android:text="@string/textForgetPassword" />
+
+        <Button
+            android:id="@+id/btFBLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btRegister"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorFacebook"
+            android:onClick="onFBLoginClick"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:text="@string/textFBLogin" />
+    </RelativeLayout>
+
+</RelativeLayout>

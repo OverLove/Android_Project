@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Android_Project</string>
+    <string name="textEmail">請輸入帳號</string>
+    <string name="textPassword">請輸入密碼</string>
+    <string name="textLogin">登入</string>
+    <string name="textRegister">我要註冊</string>
+    <string name="textForgetPassword">忘記密碼</string>
+    <string name="textFBLogin">Facebook登入</string>
+    <string name="textLoginTitle">用戶登入</string>
+    <string name="error_incorrect_password">密碼錯誤，請重新輸入！！！</string>
+    <string name="error_invalid_email">錯誤的帳號格式</string>
+    <string name="error_field_required">請填入帳號</string>
+    <string name="error_invalid_password">無效的密碼</string>
+</resources>
